@@ -7,7 +7,7 @@ It will handle the following output specifiers:
 - % : Percentage sign
 - d : Signed decimal notation
 - i : Signed decimal notation
-- b :
+- b : Binary conversion of unsigned int
 - u : Unsigned decimal
 - o : Unsigned octal
 - x : Unsigned hexadecimal in lowercase
