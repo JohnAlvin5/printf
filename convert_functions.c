@@ -9,7 +9,7 @@
 int print_char(va_list list)
 {
 	_putchar(va_arg(list, int));
-	
+
 	return (1);
 }
 
@@ -37,6 +37,7 @@ int print_str(va_list list)
 
 /**
  * print_pct - Prints percent symbol
+ * @list : list of arguements
  *
  * Return: number of printed characters
  */

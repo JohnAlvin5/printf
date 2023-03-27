@@ -8,16 +8,16 @@
 int _putchar(char c);
 int _printf(const char *format, ...);
 
-/** 
- * struct conver_specif - contains conversion specifiers and pointers
+/**
+ * struct convers_specif - contains conversion specifiers and pointers
  *      to the functions that do the specific conversions
  * @spcf : The conversion flag
  * @func : The conversion function
  */
 typedef struct convers_specif
 {
-        char *spcf;
-        int (*func)(va_list);
+	char *spcf;
+	int (*func)(va_list);
 } convert;
 
 int to_be_printed(const char *format, convert flag_list[], va_list arg_list);

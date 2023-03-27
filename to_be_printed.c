@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * to_be_printed - Processes the string from the _printf brackets
- *	checking for specifiers and normal text
+ * to_be_printed - Processes _printf string checking for specifiers
  * @format : string containing all  the characters to print
  * @flag_list : list of conversion functions
  * @arg_list : list of arguements passed
@@ -26,7 +25,6 @@ int to_be_printed(const char *format, convert flag_list[], va_list arg_list)
 					func = flag_list[j].func(arg_list);
 					if (func == -1)
 						return (-1);
-
 					print_count = print_count + func;
 					break;
 				}
@@ -37,7 +35,6 @@ int to_be_printed(const char *format, convert flag_list[], va_list arg_list)
 				{
 					_putchar(format[i]);
 					_putchar(format[i + 1]);
-
 					print_count = print_count + 2;
 				}
 				else
