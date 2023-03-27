@@ -18,7 +18,7 @@ typedef struct convers_specif
         int (*func)(va_list);
 } convert;
 
-int to_be_printed(const char *format, convert spcf_list[], va_list arg_list);
+int to_be_printed(const char *format, convert flag_list[], va_list arg_list);
 int print_char(va_list);
 int print_str(va_list);
 int print_pct(va_list);

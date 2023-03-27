@@ -8,7 +8,7 @@
  */
 int _printf(const char *format, ...)
 {
-	convert spcf_list[] = {
+	convert flag_list[] = {
 		{"c", print_char},
 		{"s", print_str},
 		{"%", print_pct},
@@ -32,7 +32,7 @@ int _printf(const char *format, ...)
 
 	/* to_be_printed prints the text and checks the conversion
 	 * specifiers. We will create it */
-	print_count = to_be_printed(format, spcf_list, arg_list);
+	print_count = to_be_printed(format, flag_list, arg_list);
 
 	va_end(arg_list);
 
