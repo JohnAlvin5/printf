@@ -12,13 +12,6 @@ int _printf(const char *format, ...)
 		{"c", print_char},
 		{"s", print_str},
 		{"%", print_pct},
-		{"d", print_int},
-		{"i", print_int},
-		{"b", print_binary},
-		{"u", unsigned_int},
-		{"o", print_octal},
-		{"x", print_hex_low},
-		{"X", print_hex_UP},
 		{NULL, NULL}
 	};
 	int print_count;

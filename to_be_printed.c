@@ -9,7 +9,7 @@
  *
  * Return: number of characters printed
  */
-int to_be_printed(const char *format, convert flag_list, va_list arg_list)
+int to_be_printed(const char *format, convert flag_list[], va_list arg_list)
 {
 	int i, j;
 	int print_count = 0;
@@ -17,13 +17,13 @@ int to_be_printed(const char *format, convert flag_list, va_list arg_list)
 
 	for (i = 0; format[i] != '\0'; i++)
 	{
-		if format[i] == '%'
+		if (format[i] == '%')
 		{
 			for (j = 0; flag_list[j].spcf != NULL; j++)
 			{
 				if (format[i + 1] == flag_list[j].spcf[0])
 				{
-					func = flag_list[j].f(arg_list);
+					func = flag_list[j].func(arg_list);
 					if (func == -1)
 						return (-1);
 

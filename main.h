@@ -2,6 +2,8 @@
 #define main_h
 
 #include <stdlib.h>
+#include <stdarg.h>
+#include <unistd.h>
 
 int _putchar(char c);
 int _printf(const char *format, ...);
@@ -19,11 +21,11 @@ typedef struct convers_specif
 } convert;
 
 int to_be_printed(const char *format, convert flag_list[], va_list arg_list);
-int print_char(va_list);
-int print_str(va_list);
-int print_pct(va_list);
-int print_int(va_list);
-int print_binary(va_list);
-int unsigned_int(va_list);
+int print_char(va_list list);
+int print_str(va_list list);
+int print_pct(va_list list);
+int print_int(va_list list);
+int print_binary(va_list list);
+int unsigned_int(va_list list);
 
 #endif
