@@ -8,9 +8,18 @@
  */
 int print_int(va_list list)
 {
+	int print_count;
+
+	print_count = print_number(list);
+
+	return (print_count);
+}
+
+int print_number(va_list args)
+{
 	unsigned int print_count, n, div, num;
 
-	n = va_arg(list, int);
+	n = va_arg(args, int);
 	div = 1;
 	len = 0;
 
