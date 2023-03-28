@@ -27,6 +27,7 @@ int print_char(va_list list);
 int print_str(va_list list);
 
 int print_pct(va_list list);
+
 int print_int(va_list list);
 int print_binary(va_list list);
 int unsigned_int(va_list list);
