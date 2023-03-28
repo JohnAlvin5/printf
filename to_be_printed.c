@@ -3,7 +3,9 @@
 /**
  * to_be_printed - Processes _printf string checking for specifiers
  * @format : string containing all  the characters to print
+ *
  * @flag_list : list of conversion functions
+ *
  * @arg_list : list of arguements passed
  *
  * Return: number of characters printed
