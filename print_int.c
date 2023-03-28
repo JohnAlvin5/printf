@@ -3,7 +3,7 @@
 /**
  * print_int - prints an integer
  * @list : list of arguements
- *
+ * conversion specifier of integers
  * Return: number of printed characters
  */
 int print_int(va_list list)
