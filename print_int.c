@@ -3,7 +3,11 @@
 /**
  * print_int - prints an integer
  * @list : list of arguements
- * conversion specifier of integers
+ * conversion specifier of integers but you don't have to handle the flag
+ * characters
+ * You don't have to handle field width
+ * You don'T have to handle precision
+ * You don,t have to handle the length modifiers
  * Return: number of printed characters
  */
 int print_int(va_list list)
