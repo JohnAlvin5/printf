@@ -8,22 +8,14 @@
  */
 int print_int(va_list list)
 {
-	int print_count;
+	int print_count, n, div;
+	unsigned int num;
 
-	print_count = print_number(list);
-
-	return (print_count);
-}
-
-int print_number(va_list args)
-{
-	unsigned int print_count, n, div, num;
-
-	n = va_arg(args, int);
+	n = va_arg(list, int);
 	div = 1;
-	len = 0;
+	print_count = 0;
 
-	if (n <  0)
+	if (n < 0)
 	{
 		_putchar('-');
 		num = n * -1;
